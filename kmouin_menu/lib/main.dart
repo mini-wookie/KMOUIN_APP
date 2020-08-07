@@ -31,23 +31,12 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
-          ClipPath(
-            clipper: OvalBottomBorderClipper(),
-            child: Container(
-              width: double.infinity,
-              height: 387,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment(1, 1.0066717739762931),
-                  end: Alignment(-0.3834225260416666, -0.3105676773146455),
-                  colors: [
-                    const Color(0xffe85393),
-                    const Color(0xffee5a61),
-                    const Color(0xfff46132),
-                    const Color(0xff46d4ff),
-                  ],
-                ),
-              ),
+          Container(
+            width: double.infinity,
+            height: 387,
+            child: Image.asset(
+              'images/bg_image.png',
+              fit: BoxFit.cover,
             ),
           ),
           Column(
@@ -126,13 +115,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             SizedBox(
                               height: 20,
                             ),
-                            Text('✌️',
-                                style: const TextStyle(
-                                    color: const Color(0xff3487ca),
-                                    fontWeight: FontWeight.w400,
-                                    fontFamily: "AppleColorEmoji",
-                                    fontStyle: FontStyle.normal,
-                                    fontSize: 50.0)),
+                            Container(
+                              height: 66,
+                              width: 49,
+                              child: Image.asset(
+                                'images/second_imoji.png',
+                              ),
+                            ),
                             SizedBox(
                               height: 6,
                             ),
@@ -187,13 +176,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             SizedBox(
                               height: 20,
                             ),
-                            Text('🤟',
-                                style: const TextStyle(
-                                    color: const Color(0xff3487ca),
-                                    fontWeight: FontWeight.w400,
-                                    fontFamily: "AppleColorEmoji",
-                                    fontStyle: FontStyle.normal,
-                                    fontSize: 50.0)),
+                            Container(
+                              height: 66,
+                              width: 49,
+                              child: Image.asset(
+                                'images/three_imoji.png',
+                              ),
+                            ),
                             SizedBox(
                               height: 6,
                             ),
@@ -253,14 +242,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             SizedBox(
                               height: 20,
                             ),
-                            Text(
-                              '🧐',
-                              style: const TextStyle(
-                                  color: const Color(0xff3487ca),
-                                  fontWeight: FontWeight.w400,
-                                  fontFamily: "AppleColorEmoji",
-                                  fontStyle: FontStyle.normal,
-                                  fontSize: 50.0),
+                            Container(
+                              height: 66,
+                              width: 49,
+                              child: Image.asset(
+                                'images/five_imoji.png',
+                              ),
                             ),
                             SizedBox(
                               height: 6,
@@ -316,14 +303,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             SizedBox(
                               height: 20,
                             ),
-                            Text(
-                              '😀',
-                              style: const TextStyle(
-                                  color: const Color(0xff3487ca),
-                                  fontWeight: FontWeight.w400,
-                                  fontFamily: "AppleColorEmoji",
-                                  fontStyle: FontStyle.normal,
-                                  fontSize: 50.0),
+                            Container(
+                              height: 66,
+                              width: 49,
+                              child: Image.asset(
+                                'images/dorm_imoji.png',
+                              ),
                             ),
                             SizedBox(
                               height: 6,
