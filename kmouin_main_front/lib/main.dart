@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,24 +31,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          ClipPath(
-            clipper: OvalBottomBorderClipper(),
-            child: Container(
-              width: double.infinity,
-              height: 409,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment(1, 1.0066717739762931),
-                  end: Alignment(-0.3834225260416666, -0.3105676773146455),
-                  colors: [
-                    const Color(0xff2862c1),
-                    const Color(0xff358acb),
-                    const Color(0xff46d4ff),
-                    const Color(0xff46d4ff),
-                  ],
-                ),
-              ),
-            ),
+          Container(
+            width: double.infinity,
+            height: 409,
+            child: Image.asset('images/background@3x.png', fit: BoxFit.cover,),
           ),
           Container(
             child: Column(
@@ -60,41 +45,50 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Row(
                           children: <Widget>[
-                            Text(
-                              "안녕하세요!",
-                              style: const TextStyle(
-                                  color: const Color(0xfff1f1f1),
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: "NotoSansKR",
-                                  fontStyle: FontStyle.normal,
-                                  fontSize: 32.0),
-                              textAlign: TextAlign.left,
+                            Container(
+                              margin: EdgeInsets.fromLTRB(34.0, 0.0, 0.0, 10.0),
+                              child: Text(
+                                "안녕하세요!",
+                                style: const TextStyle(
+                                    color: const Color(0xfff1f1f1),
+                                    fontWeight: FontWeight.w500,
+                                    fontFamily: "NotoSansKR-Medium",
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 34.0),
+                                textAlign: TextAlign.left,
+                              ),
                             ),
                             Container(
                               height: 45.0,
                               width: 45.0,
+                              margin: EdgeInsets.only(left:15.0,),
                               child: Image.asset(
                                 'images/copy2@3x.png',
                               ),
                             ),
                           ],
                         ),
-                        Text(
-                          "해대인에 오신걸 환영합니다",
-                          style: const TextStyle(
-                              color: const Color(0xffffffff),
-                              fontWeight: FontWeight.w300,
-                              fontFamily: "NotoSansKR",
-                              fontStyle: FontStyle.normal,
-                              fontSize: 22.0),
-                          textAlign: TextAlign.left,
+                        Container(
+                          margin: EdgeInsets.only(left:34.0),
+                          child: Text(
+                            "해대인에 오신걸 환영합니다",
+                            style: const TextStyle(
+                                color: const Color(0xffffffff),
+                                fontWeight: FontWeight.w300,
+                                fontFamily: "NotoSansKR-Light",
+                                fontStyle: FontStyle.normal,
+                                fontSize: 22.0),
+                            textAlign: TextAlign.left,
+                          ),
                         ),
                         // Rectangle Copy 11
                         Container(
                           padding: EdgeInsets.all(10.0),
+                          margin: EdgeInsets.fromLTRB(26.0, 26.0, 25.0, 45.0),
                           width: 324,
                           height: 44,
                           decoration: BoxDecoration(
@@ -169,11 +163,11 @@ class CategoryCards extends StatelessWidget {
         color: const Color(0xffffffff),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
-            margin: EdgeInsets.only(bottom: 10.0,),
+            margin: EdgeInsets.fromLTRB(0.0, 14.0, 0.0, 15.0),
             width: 58.0,
             height: 58.0,
             decoration: BoxDecoration(
@@ -194,7 +188,7 @@ class CategoryCards extends StatelessWidget {
               ),
             ),
             child: Container(
-              padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(12.0),
               child: Image.asset(
                 'images/bus@3x.png',
               ),
