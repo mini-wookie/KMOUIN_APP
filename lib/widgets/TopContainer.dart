@@ -4,8 +4,7 @@ import 'package:flutter/cupertino.dart';
 class TopContainer extends StatelessWidget{
 
   final Image child;
-  final double height;
-  const TopContainer({ Key key, @required this.height, @required this.child }): super(key: key);
+  const TopContainer({ Key key, @required this.child }): super(key: key);
 
   @override
   Widget build(BuildContext context){

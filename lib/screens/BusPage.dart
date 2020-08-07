@@ -38,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        centerTitle: false,
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: Icon(CupertinoIcons.back),
