@@ -1,8 +1,16 @@
-# KMOUIN_APP
+# kmouin
 
-KMOUIN_APP_Project
+DSC_KMOU
 
-## 해대인 앱개발 프로젝트
-해대인 챗봇 서비스 유료화에 따른 본격 이전 작업
+## Getting Started
 
-해대인에 의한, 해대인을 위한, 해대인의 해대인 서비스!
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
