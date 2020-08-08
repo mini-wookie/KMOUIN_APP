@@ -172,7 +172,7 @@ class CategoryCards extends StatelessWidget {
         ],
         color: const Color(0xffffffff),
       ),
-      child: FlatButton(,
+      child: FlatButton(
         padding: EdgeInsets.all(0.0),
         onPressed: () {
           Navigator.push(
