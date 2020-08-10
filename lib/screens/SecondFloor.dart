@@ -16,19 +16,6 @@ class SecondFloorMenu extends StatefulWidget {
 }
 
 class _SecondFloorMenuState extends State<SecondFloorMenu> {
-  double length = 0;
-  double boxsize_l = 180;
-  double boxsize_d = 180;
-  double boxsize_s = 180;
-
-  @override
-  void initState() {
-    boxsize_l = 180 + (36 * length);
-    boxsize_d = 180 + (36 * length);
-    boxsize_s = 180 + (36 * length);
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,7 +104,7 @@ class _SecondFloorMenuState extends State<SecondFloorMenu> {
                     Container(
                       padding: EdgeInsets.all(16),
                       width: 355,
-                      height: boxsize_l,
+                      height: 180,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(18)),
                         boxShadow: [
@@ -150,6 +137,39 @@ class _SecondFloorMenuState extends State<SecondFloorMenu> {
                               color: const Color(0xffc53786),
                             ),
                           ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text("숯불제육덮밥",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text("치즈라면 + 공기밥",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text("치즈라면",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
                         ],
                       ),
                     ),
@@ -159,7 +179,7 @@ class _SecondFloorMenuState extends State<SecondFloorMenu> {
                     Container(
                       padding: EdgeInsets.all(16),
                       width: 355,
-                      height: boxsize_d,
+                      height: 180,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(18)),
                         boxShadow: [
@@ -171,28 +191,96 @@ class _SecondFloorMenuState extends State<SecondFloorMenu> {
                           ),
                         ],
                         color: const Color(0xffffffff),
-                      ),                      child: Column(
-                      children: <Widget>[
-                        Text("저녁",
-                            style: const TextStyle(
-                                color: const Color(0xff131415),
-                                fontWeight: FontWeight.w500,
-                                fontFamily: "NotoSansKR",
-                                fontStyle: FontStyle.normal,
-                                fontSize: 24.0),
-                            textAlign: TextAlign.center),
-                        SizedBox(
-                          height: 7,
-                        ),
-                        Container(
-                          width: 319,
-                          height: 1,
-                          decoration: BoxDecoration(
-                            color: const Color(0xffc53786),
+                      ),
+                      child: Column(
+                        children: <Widget>[
+                          Text("저녁",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 24.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 7,
                           ),
-                        ),
-                      ],
-                    ),
+                          Container(
+                            width: 319,
+                            height: 1,
+                            decoration: BoxDecoration(
+                              color: const Color(0xffc53786),
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text("숯불제육덮밥",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text("치즈라면 + 공기밥",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text("치즈라면",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text("숯불제육덮밥",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text("치즈라면 + 공기밥",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text("치즈라면",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                        ],
+                      ),
                     ),
                     SizedBox(
                       height: 34,
@@ -200,7 +288,7 @@ class _SecondFloorMenuState extends State<SecondFloorMenu> {
                     Container(
                       padding: EdgeInsets.all(16),
                       width: 355,
-                      height: boxsize_s,
+                      height: 180,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(
                           Radius.circular(18),
@@ -214,32 +302,63 @@ class _SecondFloorMenuState extends State<SecondFloorMenu> {
                           ),
                         ],
                         color: const Color(0xffffffff),
-                      ),                      child: Column(
-                      children: <Widget>[
-                        Text("일품식",
-                            style: const TextStyle(
-                                color: const Color(0xff131415),
-                                fontWeight: FontWeight.w500,
-                                fontFamily: "NotoSansKR",
-                                fontStyle: FontStyle.normal,
-                                fontSize: 24.0),
-                            textAlign: TextAlign.center),
-                        SizedBox(
-                          height: 7,
-                        ),
-                        Container(
-                          width: 319,
-                          height: 1,
-                          decoration: BoxDecoration(
-                            color: const Color(0xffc53786),
+                      ),
+                      child: Column(
+                        children: <Widget>[
+                          Text("일품식",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 24.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 7,
                           ),
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        Text('')
-                      ],
-                    ),
+                          Container(
+                            width: 319,
+                            height: 1,
+                            decoration: BoxDecoration(
+                              color: const Color(0xffc53786),
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text("숯불제육덮밥",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text("치즈라면 + 공기밥",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text("치즈라면",
+                              style: const TextStyle(
+                                  color: const Color(0xff131415),
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: "NotoSansKR",
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0),
+                              textAlign: TextAlign.center),
+                        ],
+                      ),
                     ),
                     SizedBox(
                       height: 30,

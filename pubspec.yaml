@@ -55,9 +55,10 @@ flutter:
     - images/MenuPage/three_imoji.png
     - images/BusPage/bus_big_image.png
     - images/BusPage/businfo.png
-    - images/BusPage/iconmonstrBus1240@3x.png
     - images/BusPage/TopContainer.png
-    - images/BusPage/iconmonstrBus1240.png
+    - images/BusPage/bus_min1.jpg
+    - images/BusPage/bus_min2.jpg
+    - images/BusPage/commuterbus.png
   fonts:
     - family: NotoSansKR
       fonts:
