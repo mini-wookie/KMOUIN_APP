@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:kmouin/screens/BusPage.dart';
-import 'package:kmouin/screens/MenuPage.dart';
 import 'widgets/TopContainer.dart';
+import 'widgets/mainPageData.dart';
+import 'widgets/mainCategory.dart';
+import 'widgets/mainIcon.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(top:112.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -118,140 +120,75 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ],
                 ), //상단 타이틀 및 검색바 부분
-                CardRow(),
-                CardRow(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    CategoryCards(
+                      logoContainer: IconContainer(
+                        startingColor: color1,
+                        endingColor: color2,
+                        iconImage: Image.asset('images/frontPage/bus@3x.png'),
+                      ),
+                      containerTitle: '버스 정보',
+                      containerDescription: '버스 언제 출발하지..',
+                      order: 1,
+                    ),
+                    CategoryCards(
+                      logoContainer: IconContainer(
+                        startingColor: color3,
+                        endingColor: color4,
+                        iconImage: Image.asset('images/frontPage/meal@3x.png'),
+                      ),
+                      containerTitle: '식단 정보',
+                      containerDescription: '오늘 뭐 먹지..',
+                      order: 2,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    CategoryCards(
+                      logoContainer: IconContainer(
+                        startingColor: color5,
+                        endingColor: color6,
+                        iconImage:
+                            Image.asset('images/frontPage/facility@3x.png'),
+                      ),
+                      containerTitle: '시설 정보',
+                      containerDescription: '도서관에 자리가 있나..',
+                      order: 3,
+                    ),
+                    CategoryCards(
+                      logoContainer: IconContainer(
+                        startingColor: color7,
+                        endingColor: color8,
+                        iconImage: Image.asset('images/frontPage/sched@3x.png'),
+                      ),
+                      containerTitle: '학사 일정',
+                      containerDescription: '학기 언제 끝나..',
+                      order: 4,
+                    ),
+                  ],
+                ),
+                Center(
+                  child: // 오류 제보 및 개발자
+                      Container(
+                        margin: EdgeInsets.only(top:74.0),
+                        child: Text("오류 제보 및 개발자",
+                            style: const TextStyle(
+                                color: const Color(0xff2c6ec4),
+                                fontWeight: FontWeight.w500,
+                                fontFamily: "NotoSansKR",
+                                fontStyle: FontStyle.normal,
+                                fontSize: 16.0),
+                            textAlign: TextAlign.center),
+                      ),
+                ),
               ],
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class CardRow extends StatelessWidget {
-  const CardRow({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        // Rectangle Copy 2
-        CategoryCards(),
-        CategoryCards(),
-      ],
-    );
-  }
-}
-
-class CategoryCards extends StatelessWidget {
-  const CategoryCards({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(7.5),
-      width: 160,
-      height: 160,
-      alignment: Alignment.centerLeft,
-      padding: EdgeInsets.only(left:10.0),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(20)),
-        boxShadow: [
-          BoxShadow(
-            color: const Color(0x80cacaca),
-            offset: Offset(0, -1),
-            blurRadius: 16,
-            spreadRadius: 2,
-          ),
-        ],
-        color: const Color(0xffffffff),
-      ),
-      child: FlatButton(
-        padding: EdgeInsets.all(0.0),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => BusPage(),
-            ),
-          );
-        },
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-              margin: EdgeInsets.fromLTRB(0.0, 14.0, 0.0, 15.0),
-              width: 58.0,
-              height: 58.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(58.0),
-                gradient: LinearGradient(
-                  begin: Alignment(
-                    0.20662397904829533,
-                    0,
-                  ),
-                  end: Alignment(
-                    0.8835055264559655,
-                    1.0000000000000002,
-                  ),
-                  colors: [
-                    const Color(0xff8b25ac),
-                    const Color(0xff6159de),
-                  ],
-                ),
-              ),
-              child: Container(
-                padding: EdgeInsets.all(12.0),
-                child: Image.asset(
-                  'images/frontPage/bus@3x.png',
-                ),
-              ),
-            ),
-            // 버스 정보
-            Text(
-              "버스 정보",
-              style: const TextStyle(
-                color: const Color(0xff131415),
-                fontWeight: FontWeight.w500,
-                fontFamily: "NotoSansKR",
-                fontStyle: FontStyle.normal,
-                fontSize: 16.0,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            // 실시간 위치를 알 수 있어요
-            Text(
-              "실시간 위치를 알 수 있어요",
-              style: const TextStyle(
-                color: const Color(0xff5f605f),
-                fontWeight: FontWeight.w500,
-                fontFamily: "NotoSansKR",
-                fontStyle: FontStyle.normal,
-                fontSize: 12.0,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            // #셔틀 버스
-            Text(
-              "#셔틀 버스 #통근버스 #190번 버스",
-              style: const TextStyle(
-                color: const Color(0xff878787),
-                fontWeight: FontWeight.w500,
-                fontFamily: "NotoSansKR",
-                fontStyle: FontStyle.normal,
-                fontSize: 9.0,
-              ),
-              textAlign: TextAlign.center,
-            )
-          ],
-        ),
       ),
     );
   }
