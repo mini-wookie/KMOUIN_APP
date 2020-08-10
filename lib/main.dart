@@ -177,7 +177,7 @@ class CategoryCards extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BusPage(),
+              builder: (context) => MenuPage(),
             ),
           );
         },
