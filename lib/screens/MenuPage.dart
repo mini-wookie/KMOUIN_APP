@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kmouin/screens/ThirdFloor.dart';
 import '../widgets/TopContainer.dart';
 import '../screens/SecondFloor.dart';
 
@@ -169,7 +170,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: const Color(0xffffffff),
                     ),
                     child: FlatButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ThirdFloor(),
+                          ),
+                        );
+                      },
                       child: Center(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
