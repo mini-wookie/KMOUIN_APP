@@ -6,7 +6,8 @@ class BusInfo extends StatelessWidget {
   final double width;
   final String title;
 
-  const BusInfo({Key key, this.timeTable, @required this.width, @required this.title})
+  const BusInfo(
+      {Key key, this.timeTable, @required this.width, @required this.title})
       : super(key: key);
 
   @override
@@ -17,15 +18,16 @@ class BusInfo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(title,
-            style: const TextStyle(
-              color: const Color(0xff000000),
-              fontWeight: FontWeight.w600,
-              fontFamily: "NotoSansKR",
-              fontStyle: FontStyle.normal,
-              fontSize: 16.0,
-            ),
-            ),
+        Text(
+          title,
+          style: const TextStyle(
+            color: const Color(0xff000000),
+            fontWeight: FontWeight.w600,
+            fontFamily: "NotoSansKR",
+            fontStyle: FontStyle.normal,
+            fontSize: 16.0,
+          ),
+        ),
         SizedBox(height: 10.0),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -76,7 +78,11 @@ class BusInfo extends StatelessWidget {
                           ),
                         ),
                         Spacer(),
-                        Image.asset("images/BusPage/iconmonstrBus1240.png"),
+                        SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: Image.asset("images/BusPage/bus_min1.jpg"),
+                        ),
                       ],
                     ),
                   ],
@@ -90,7 +96,7 @@ class BusInfo extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                     border:
-                        Border.all(color: const Color(0xff842fb5), width: 2),
+                    Border.all(color: const Color(0xff842fb5), width: 2),
                     color: const Color(0xffffffff))),
             SizedBox(width: 13.0 * fullWidth * rate),
             Container(
@@ -144,7 +150,11 @@ class BusInfo extends StatelessWidget {
                           ),
                         ),
                         Spacer(),
-                        Image.asset("images/BusPage/iconmonstr-bus.png"),
+                        SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: Image.asset("images/BusPage/bus_min2.jpg"),
+                        ),
                       ],
                     ),
                   ],
@@ -152,7 +162,7 @@ class BusInfo extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                     border:
-                        Border.all(color: const Color(0xff737373), width: 1),
+                    Border.all(color: const Color(0xff737373), width: 1),
                     color: const Color(0xffffffff))),
             SizedBox(width: 13.0 * fullWidth * rate),
             Container(
@@ -203,7 +213,7 @@ class BusInfo extends StatelessWidget {
                       SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset("images/BusPage/iconmonstr-bus.png"),
+                        child: Image.asset("images/BusPage/bus_min2.jpg"),
                       ),
                     ],
                   ),
