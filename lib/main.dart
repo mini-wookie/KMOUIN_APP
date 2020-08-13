@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 style: const TextStyle(
                                     color: const Color(0xfff1f1f1),
                                     fontWeight: FontWeight.w500,
-                                    fontFamily: "NotoSansKR-Medium",
+                                    fontFamily: "NotoSansKR",
                                     fontStyle: FontStyle.normal,
                                     fontSize: 34.0),
                                 textAlign: TextAlign.left,
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             style: const TextStyle(
                                 color: const Color(0xffffffff),
                                 fontWeight: FontWeight.w300,
-                                fontFamily: "NotoSansKR-Light",
+                                fontFamily: "NotoSansKR",
                                 fontStyle: FontStyle.normal,
                                 fontSize: 22.0),
                             textAlign: TextAlign.left,
@@ -174,7 +174,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Center(
                   child: // 오류 제보 및 개발자
                       Container(
-                        margin: EdgeInsets.only(top:74.0),
+                        margin: EdgeInsets.fromLTRB(0.0, 44.0, 0.0, 70.0),
                         child: Text("오류 제보 및 개발자",
                             style: const TextStyle(
                                 color: const Color(0xff2c6ec4),

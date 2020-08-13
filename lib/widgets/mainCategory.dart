@@ -20,8 +20,6 @@ class CategoryCards extends StatelessWidget {
       margin: EdgeInsets.all(7.5),
       width: 160,
       height: 160,
-      alignment: Alignment.centerLeft,
-      padding: EdgeInsets.only(left: 10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20)),
         boxShadow: [
@@ -45,8 +43,8 @@ class CategoryCards extends StatelessWidget {
           );
         },
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             logoContainer,
             // 버스 정보
