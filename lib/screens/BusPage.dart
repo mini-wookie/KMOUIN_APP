@@ -40,7 +40,11 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Icon(CupertinoIcons.back),
+        leading: IconButton(
+          icon: Icon(Icons.navigate_before),
+          onPressed: () => Navigator.maybePop(context),
+          color: Color(0xff793cc2),
+        ),
         titleSpacing: -15,
         title: Text(
           "메인",
