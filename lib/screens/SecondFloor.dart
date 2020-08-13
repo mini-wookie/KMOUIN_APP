@@ -249,36 +249,6 @@ class _SecondFloorMenuState extends State<SecondFloorMenu> {
                           SizedBox(
                             height: 15,
                           ),
-                          Text("숯불제육덮밥",
-                              style: const TextStyle(
-                                  color: const Color(0xff131415),
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "NotoSansKR",
-                                  fontStyle: FontStyle.normal,
-                                  fontSize: 16.0),
-                              textAlign: TextAlign.center),
-                          SizedBox(
-                            height: 12,
-                          ),
-                          Text("치즈라면 + 공기밥",
-                              style: const TextStyle(
-                                  color: const Color(0xff131415),
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "NotoSansKR",
-                                  fontStyle: FontStyle.normal,
-                                  fontSize: 16.0),
-                              textAlign: TextAlign.center),
-                          SizedBox(
-                            height: 12,
-                          ),
-                          Text("치즈라면",
-                              style: const TextStyle(
-                                  color: const Color(0xff131415),
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "NotoSansKR",
-                                  fontStyle: FontStyle.normal,
-                                  fontSize: 16.0),
-                              textAlign: TextAlign.center),
                         ],
                       ),
                     ),
