@@ -44,7 +44,6 @@ class CategoryCards extends StatelessWidget {
         },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             logoContainer,
             // 버스 정보
@@ -55,7 +54,7 @@ class CategoryCards extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 fontFamily: "NotoSansKR",
                 fontStyle: FontStyle.normal,
-                fontSize: 16.0,
+                fontSize: 24.0,
               ),
               textAlign: TextAlign.center,
             ),

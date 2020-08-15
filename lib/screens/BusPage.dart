@@ -38,12 +38,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        centerTitle: false,
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
           icon: Icon(Icons.navigate_before),
           onPressed: () => Navigator.maybePop(context),
-          color: Color(0xff793cc2),
+          color: Color(0xffffffff),
         ),
         titleSpacing: -15,
         title: Text(
@@ -104,7 +105,17 @@ class _MyHomePageState extends State<MyHomePage> {
                                 children: <Widget>[
                                   BusInfo(
                                     width: 100 * fullWidth * rate,
-                                    title: "해양대",
+                                    title: "평일",
+                                  ),
+                                  SizedBox(height: 14.0),
+                                  BusInfo(
+                                    width: 100 * fullWidth * rate,
+                                    title: "공휴일",
+                                  ),
+                                  SizedBox(height: 14.0),
+                                  BusInfo(
+                                    width: 100 * fullWidth * rate,
+                                    title: "시험기간",
                                   ),
                                 ]),
                             SizedBox(height: 30.0),

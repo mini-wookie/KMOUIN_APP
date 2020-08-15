@@ -14,11 +14,11 @@ class IconContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(0.0, 14.0, 0.0, 15.0),
-      width: 58.0,
-      height: 58.0,
+      margin: EdgeInsets.fromLTRB(0.0, 14.0, 0.0, 12.0),
+      width: 66.0,
+      height: 66.0,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(58.0),
+        borderRadius: BorderRadius.circular(66.0),
         gradient: LinearGradient(
           begin: Alignment(
             0.20662397904829533,
@@ -35,7 +35,7 @@ class IconContainer extends StatelessWidget {
         ),
       ),
       child: Container(
-        padding: EdgeInsets.all(12.0),
+        padding: EdgeInsets.all(13.0),
         child: iconImage,
       ),
     );
